@@ -1,0 +1,257 @@
+@import "@/styles/variables";
+@import "@/styles/helpers";
+@import "@/styles/abstracts/mixins";
+
+.case-card-item {
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: $box-shadow-case-card;
+
+  &__heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+  }
+  &__content {
+    padding: 0 1.25rem;
+  }
+  .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .condition-img {
+    min-height: 150px;
+    max-height: 150px;
+    height: 180px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    vertical-align: middle;
+  }
+
+  .charity-image {
+    width: 50px;
+    height: 50px;
+    top: 5px;
+    left: 5px;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+
+  .remaining-period {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+
+  .share-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    padding: 0.8rem 1.5rem;
+    background-color: $color-primary;
+    color: white;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    cursor: pointer;
+    top: 15px;
+    right: -10px;
+    transition: all .2s ease-in-out;
+    &:hover {
+      background-color: $color-primary-hover;
+    }
+
+    .whatsapp-icon,
+    .facebook-icon,
+    .twitter-icon {
+      display: none;
+    }
+
+  }
+
+  .remaining_amount_card {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    border-radius: 0 0 9px 9px;
+    box-shadow: $box-shadow-tile;
+    z-index: 10;
+    top: 140px;
+    right: 23px;
+    overflow: hidden;
+    &__details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 10px;
+      font-size: 14px;
+      font-weight: 600;
+      background-color: $color-gray-lighter;
+      border-radius: 0 0 8px 8px;
+    }
+  }
+
+  .condition-description {
+    color: $color-font-lighter;
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+  }
+
+  .percentage-card {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0.6rem 1.25rem;
+    text-align: right;
+    direction: rtl;
+    font-size: 14px;
+    color: $color-complementary;
+
+    h6 {
+      color: #676767;
+    }
+  }
+
+  &__donate {
+    width: 80%;
+  }
+  .btn-donation {
+    background-color: #1ab3ab;
+    color: white;
+    font-size: 15px;
+
+    &:hover {
+      background-color: #0D9488;
+    }
+
+    a {
+      display: block;
+      margin-bottom: 8px;
+    }
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .progress {
+    position: relative;
+    display: flex;
+    height: 16px !important;
+    width: 100% !important;
+    font-size: 0.75rem;
+    border-radius: 1.25rem;
+    background: #E0F6F6 !important;
+    overflow: visible !important;
+
+    &:hover .hint {
+      display: block !important;
+    }
+  }
+
+  .progress-bar {
+    background: $color-gradient-primary;
+    border-radius: $border-radius-big;
+    box-shadow: $box-shadow-progressbar;
+    transition: width 0.6s ease;
+    padding: 0;
+    &__percentage {
+      font-size: 12px;
+    }
+  }
+
+  .hint {
+    display: none;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 135%;
+    background: #36beb6;
+    padding: 2px 4px 0 3px;
+    border-radius: 5px;
+    box-shadow: 0 6px 18px 2px rgb(0 0 0 / 23%);
+    margin-right: -29px;
+    width: 35px;
+    text-align: center;
+  }
+
+  &--campaign {
+    .condition-img {
+      filter: brightness(0.7);
+    }
+    .case-card-item__remaining-amount {
+      color: $color-font-lighter;
+    }
+  }
+}
+.details {
+  font-size: 14px;
+}
+.button-share {
+  width: 60px !important;
+  background-color: $color-gray-lighter !important;
+  border-color: $color-gray-lighter !important;
+  color: $color-complementary !important;
+}
+::v-deep(.p-card-body) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 0 !important;
+}
+::v-deep(.p-card-header) {
+  padding: 10px 10px 0 10px;
+}
+::v-deep(.p-card-content) {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  border-bottom: 1px solid #e5e5e5;
+}
+::v-deep(.p-card .p-card-footer) {
+  padding: 1.25rem;
+}
+
+::v-deep(.close-btn) {
+  justify-content: center;
+  .p-button-label {
+    flex: none !important;
+    padding: 0 .5rem !important;
+  }
+
+  .p-button-icon {
+    font-size: 1.2rem !important;
+  }
+}
+::v-deep(.p-button-label) {
+  font-weight: 400;
+}
+::v-deep(.p-card-content) {
+  flex-grow: 1;
+}
+
+.dir-rtl {
+  direction: rtl;
+}
+
+.color-primary {
+  color: $color-primary;
+}
+
+.h-50p {
+  height: 50px;
+}

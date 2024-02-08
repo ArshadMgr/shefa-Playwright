@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="278.124" height="310" viewBox="0 0 278.124 310">
+  <defs>
+    <filter id="Polygon_9" x="0" y="0" width="278.124" height="310" filterUnits="userSpaceOnUse">
+      <feOffset dx="-4" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-color="#b8e8e6"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1671" data-name="Group 1671" transform="translate(-1146.5 16.685)">
+    <g transform="matrix(1, 0, 0, 1, 1146.5, -16.68)" filter="url(#Polygon_9)">
+      <path id="Polygon_9-2" data-name="Polygon 9" d="M171.5,0a43,43,0,0,1,37.369,21.727L249.89,93.789a43,43,0,0,1,0,42.546L208.868,208.4A43,43,0,0,1,171.5,230.124h-81A43,43,0,0,1,53.132,208.4L12.11,136.335a43,43,0,0,1,0-42.546L53.132,21.727A43,43,0,0,1,90.5,0Z" transform="translate(258.12 18) rotate(90)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

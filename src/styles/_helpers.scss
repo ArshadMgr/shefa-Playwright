@@ -1,0 +1,33 @@
+@import "./variables";
+
+.color-primary {
+    color: $color-primary;
+    &--lighter {
+        color: $color-primary-lighter;
+    }
+    &--hover {
+        &:hover {
+            color: $color-primary-hover;
+        }
+    }
+}
+.color-secondary {
+    color: $color-font-lighter;
+}
+.color-complementary {
+    color: $color-complementary;
+}
+
+.color-font-lighter {
+    color: $color-font-lighter;
+}
+.pointer {
+    cursor: pointer;
+}
+.accent {
+    color: $color-primary-lighter;
+
+    &--complementary {
+        color: $color-complementary;
+    }
+}

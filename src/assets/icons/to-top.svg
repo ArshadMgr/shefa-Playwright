@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74.478" height="81.359" viewBox="0 0 74.478 81.359">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Clip_2" data-name="Clip 2" d="M0,0H26V26H0Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="To_Top" data-name="To Top" transform="translate(-6.261 -2.32)">
+    <path id="Polygon" d="M35.5,4.33a15,15,0,0,1,15,0L72.739,17.17a15,15,0,0,1,7.5,12.99V55.84a15,15,0,0,1-7.5,12.99L50.5,81.67a15,15,0,0,1-15,0L13.261,68.83a15,15,0,0,1-7.5-12.99V30.16a15,15,0,0,1,7.5-12.99Z" transform="translate(86.5 86) rotate(-180)" fill="#17bcb3"/>
+    <g id="icons8-low_importance" transform="translate(56.5 56) rotate(-180)">
+      <path id="Clip_2-2" data-name="Clip 2" d="M0,0H26V26H0Z" fill="none"/>
+      <g id="icons8-low_importance-2" data-name="icons8-low_importance" clip-path="url(#clip-path)">
+        <path id="Fill_1" data-name="Fill 1" fill="#ffffff" d="M13,26A13,13,0,1,1,26,13,13.015,13.015,0,0,1,13,26ZM9.059,14.3a.521.521,0,0,0-.37.889l3.528,3.528a1.107,1.107,0,0,0,1.565,0l3.528-3.528a.521.521,0,0,0-.37-.889H14.3V7.8a1.3,1.3,0,1,0-2.6,0v6.5Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

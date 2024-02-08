@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="675" height="648" viewBox="0 0 675 648">
+  <defs>
+    <clipPath id="clip-CampaignIcon">
+      <rect width="675" height="648"/>
+    </clipPath>
+  </defs>
+  <g id="CampaignIcon" clip-path="url(#clip-CampaignIcon)">
+    <g id="Group_1752" data-name="Group 1752">
+      <circle id="Ellipse_261" data-name="Ellipse 261" cx="179" cy="179" r="179" transform="translate(159 145)" fill="#efefef"/>
+      <path id="Campaignicon-2" data-name="Campaignicon" d="M376.564,151.627H361.71V308.977H333.521V151.627H186.726L78.983,59.112V401.5l107.762-92.524H288.683v18.842c-8.033.228-14.529,6.362-14.529,13.836v41.632c0,7.473,6.5,13.611,14.529,13.836v1.625c0,30.311,26.848,55.106,59.67,55.106h13.375V308.985h14.829c112.7,0,112.7-157.349,0-157.349ZM50.8,34.954,13.141,2.693C8.807-1.527.969,1.237.969,7.161V453.452c.082,5.62,7.311,8.647,11.843,4.751L50.8,425.656Z" transform="matrix(0.848, 0.53, -0.53, 0.848, 301.962, 25.927)" fill="#12B2aa" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

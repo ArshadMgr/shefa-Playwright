@@ -1,0 +1,5 @@
+@import "@/styles/variables";
+::v-deep(.p-card) {
+    border-radius: $border-radius-default;
+    box-shadow: $box-shadow-card-stronger;
+}

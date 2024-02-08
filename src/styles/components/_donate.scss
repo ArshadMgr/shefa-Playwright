@@ -1,0 +1,211 @@
+@import "@/styles/variables";
+@import "@/styles/abstracts/mixins";
+@import "@/styles/helpers";
+
+.donate {
+  width: 100%;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  &__card {
+    max-width: 612px;
+    border-radius: $border-radius-default;
+    box-shadow: $box-shadow-card-stronger;
+    background-color: white;
+    margin: 0 8px;
+    padding: 23px 24px 50px;
+  }
+
+  &__heading {
+    font-size: 24px;
+    margin: 0 0 36px;
+  }
+
+  &__button {
+    width: 182px;
+  }
+}
+
+.share-tag {
+  right: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  padding: 0.8rem 1.5rem;
+  background-color: #14B8A6;
+  color: white;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  cursor: pointer;
+  bottom: 1rem;
+  transition: all .6s ease-in-out;
+
+  .whatsapp-icon,
+  .facebook-icon,
+  .twitter-icon {
+    display: none;
+  }
+
+  &.expanded {
+    width: 140px;
+
+    .share-icon {
+      display: none;
+    }
+
+    .whatsapp-icon,
+    .facebook-icon,
+    .twitter-icon {
+      display: block;
+    }
+  }
+}
+
+.tags {
+  .tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem;
+    padding: 5px 0;
+    text-align: center;
+    color: $color-primary;
+    border: 1px solid $color-complementary;
+    border-radius: 8px;
+    cursor: pointer;
+    flex: 1;
+
+    &:nth-of-type(1) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      flex: 2;
+      margin-left: 0;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.donation-disclaimer {
+  font-size: 13px;
+  color: $color-font-lighter;
+}
+
+a {
+  color: white;
+}
+
+.payment-radio {
+  width: 80px;
+  height: 42px;
+  margin: 0 7px;
+  border: 1px solid $color-secondary;
+  border-radius: $border-radius-default;
+  cursor: pointer;
+  overflow: hidden;
+
+  ::v-deep(.p-radiobutton) {
+    opacity: 0;
+    position: absolute;
+  }
+
+  &__image {
+    height: 42px;
+    object-fit: cover;
+    object-position: center;
+    padding: 0 0.5rem;
+    margin: 0 5px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+
+    &--apple {
+      height: 30px;
+    }
+  }
+
+  &--checked {
+    border-color: $color-primary;
+  }
+}
+
+::v-deep(.p-progressbar) {
+  background: #E7F7F7;
+  border-radius: $border-radius-big;
+}
+
+::v-deep(.p-progressbar .p-progressbar-value) {
+  background: $color-gradient-primary;
+  border-radius: $border-radius-big;
+  box-shadow: $box-shadow-progressbar;
+}
+
+.payment-methods {
+
+  .item {
+    height: 42px;
+    min-width: 120px;
+    padding: 0 .5rem;
+    margin: 0 5px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &.selected img {
+      border-color: $color-primary-border;
+    }
+  }
+
+  .apple-pay {
+
+    border: 1px solid #ced4da;
+
+    &.selected {
+      border-color: $color-primary-border;
+    }
+    img {
+      width: 42px;
+      height: 22px;
+    }
+  }
+}
+
+@include respond('lg') {
+  .donate {
+    &__container {
+      flex-flow: column;
+      align-items: center;
+    }
+
+    &__card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  .tags {
+    flex-flow: column;
+
+    .tag {
+      margin: 0;
+    }
+  }
+}
+
+@include respond('md') {
+  .donate {
+    &__card {
+      padding: 11px 12px 25px;
+    }
+  }
+}

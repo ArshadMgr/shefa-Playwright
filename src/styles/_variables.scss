@@ -1,0 +1,64 @@
+// colors
+$color-primary: #12B2aa;
+$color-primary-hover: #0E8E88;
+$color-primary-lighter: #59C9C4;
+$color-primary-background: #e7f7f76e;
+$color-primary-border: #59C9C4;
+$color-primary-border-light: #b8e8e6;
+$color-complementary: #5581C4;
+$color-complementary-hover: #557ac4;
+$color-complementary-lighter: #A4C1EF;
+$color-secondary: #D9D9D9;
+$color-secondary-lighter: #f9f9f9;
+$color-secondary-hover: #B2B2B2;
+$color-font-black: #191919;
+$color-font-dark: #3F3F3F;
+$color-font-darker: #656565;
+$color-font-lighter: #8c8c8c;
+$color-background-success: #CAF1D8;
+$color-border-light: #e2e2e2;
+$color-font-success: #136C34;
+$color-background-info: #d0e1fd;
+$color-font-info: #204887;
+$color-background-danger: #FFD0CE;
+$color-font-danger: #8C221C;
+$color-button-danger-bcg: #FFE7E6;
+$color-button-danger-hover-bcg: #FAC3C0;
+$color-button-danger-font: #FF5757;
+$color-blue: #696CFF;
+$color-light-blue: #4777BA;
+$color-background-light: #FCFCFC;
+$color-background-light-2: #FAFCFC;
+$color-footer-bcg: #0B6E69;
+$color-gray-lighter: #ECECEC;
+
+$color-twitter-blue: #009AF0;
+$color-twitter-blue-hover: rgba(#009AF0, .85);
+$color-facebook-blue: #2E508D;
+$color-facebook-blue-hover: rgba(#2E508D, .85);
+$color-whatsapp-green: #00BC2F;
+$color-whatsapp-green-hover: rgba(#00BC2F, .85);
+
+$color-status-red: #8C221C;
+$color-status-green: #136C34;
+$color-status-grey: #8C8C8C;
+
+$color-gradient-primary: transparent linear-gradient(260deg, $color-primary 0%, $color-complementary 100%) 0 0 no-repeat padding-box;
+
+// shadows
+$box-shadow-card: 0px 0px 4px #3F3F3F1A;
+$box-shadow-case-card: 0px 3px 6px #0000003E;
+$box-shadow-card-stronger: 0px 0px 4px #0000003D;
+$box-shadow-tile: 0px 3px 6px #00000029;
+$box-shadow-primary: 0px 0px 4px #0E8E88;
+$box-shadow-logo: 0px 3px 6px #5581C467;
+$box-shadow-progressbar: -5px 0px 6px #00000029;
+$box-shadow-blur: -10px 10px 20px #21395D24;
+
+// borders
+$border-radius-default: 10px;
+$border-radius-big: 20px;
+$border-radius-small: 5px;
+
+// transitions
+$transition-basic: all .2s ease;

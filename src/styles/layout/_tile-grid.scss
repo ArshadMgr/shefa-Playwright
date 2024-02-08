@@ -1,0 +1,27 @@
+@import "@/styles/abstracts/mixins";
+.tile-grid {
+  display: grid;
+  grid-template-areas: 'top top'
+                      'left right'
+                      'bottom bottom';
+  grid-gap: 24px 16px;
+  .tile-top {
+    grid-area: top;
+  }
+  .tile-right {
+    grid-area: right;
+  }
+  .tile-left {
+    grid-area: left;
+  }
+  .tile-bottom {
+    grid-area: bottom;
+  }
+
+  @include respond('lg') {
+    grid-template-areas: 'top'
+                          'left'
+                          'right'
+                          'bottom';
+  }
+}

@@ -1,0 +1,126 @@
+::v-deep(.p-fileupload) {
+  border: none !important;
+  .p-fileupload-buttonbar {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+  }
+  .p-button,
+  .p-button-icon-only {
+    background-color: #d9d9d9;
+    border-color: #d9d9d9;
+    color: #3f3f3f;
+    transition: 0.1s;
+    border-radius: 25px;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: #565e64;
+      border-color: #565e64;
+      color: #fff;
+      box-shadow: none;
+      .p-focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .p-progressbar {
+    display: none;
+  }
+
+  .p-fileupload-content {
+    border: none;
+    padding: 0;
+  }
+
+  .p-fileupload-file {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px dashed #ced4da;
+    .p-badge {
+      display: none;
+    }
+    &__image {
+      max-width: 50px;
+    }
+    &__file-name {
+      max-width: 350px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap !important;
+    }
+  }
+
+  .p-fileupload-file-actions {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .p-fileupload-row,
+  .p-fileupload-file {
+    font-size: 14px;
+    color: #8c8c8c;
+  }
+
+  input[accept=".pdf"] ~ .p-fileupload-content img {
+    display: none;
+  }
+
+  .fileupload-custom {
+    margin: 1rem !important;
+    background: #d9d9d9;
+    border-color: #d9d9d9;
+    color: #3f3f3f;
+    &:hover {
+     background-color: #b2b2b2;
+     border-color: #b2b2b2;
+     color: #3f3f3f;
+    }
+  }
+  .fileupload-hide {
+   display: none;
+  }
+
+  .p-fileupload-file-remove {
+    width: 5.5rem;
+    min-width: unset;
+    background-color: #d9d9d9;
+    border-color: #d9d9d9;
+    color: #3f3f3f;
+    &::after {
+      content: 'الغاء';
+      margin-right: .5rem;
+    }
+    &:hover {
+      background-color: #b2b2b2 !important;
+      border-color: #b2b2b2 !important;
+      color: #3f3f3f !important;
+      box-shadow: none;
+      .p-focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .p-button-secondary {
+    min-width: unset;
+    background: #d9d9d9;
+    border-color: #d9d9d9;
+    color: #3f3f3f;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: #b2b2b2;
+      border-color: #b2b2b2;
+      color: #3f3f3f;
+    }
+    .pi {
+      margin-left: 5px;
+    }
+    &:nth-of-type(1) {
+      margin-right: auto;
+    }
+  }
+}

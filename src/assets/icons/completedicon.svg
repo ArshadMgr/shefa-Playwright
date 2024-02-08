@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="45" viewBox="0 0 41 45">
+  <defs>
+    <clipPath id="clip-completedicon">
+      <rect width="41" height="45"/>
+    </clipPath>
+  </defs>
+  <g id="completedicon" clip-path="url(#clip-completedicon)">
+    <g id="Group_1539" data-name="Group 1539" transform="translate(-226.5 -177)">
+      <path id="Polygon_4" data-name="Polygon 4" d="M26.905,0a8,8,0,0,1,6.91,3.969l5.833,10a8,8,0,0,1,0,8.062l-5.833,10A8,8,0,0,1,26.905,36H15.095a8,8,0,0,1-6.91-3.969l-5.833-10a8,8,0,0,1,0-8.062l5.833-10A8,8,0,0,1,15.095,0Z" transform="translate(265.5 179) rotate(90)" fill="#12b2aa"/>
+    </g>
+    <path id="check-circle-solid" d="M13.872,3A10.872,10.872,0,1,0,24.744,13.872a9.512,9.512,0,0,0-.575-3.424L22.81,11.781a8.464,8.464,0,0,1,.261,2.091,9.2,9.2,0,1,1-9.2-9.2A8.957,8.957,0,0,1,20.223,7.26L21.4,6.084A10.609,10.609,0,0,0,13.872,3Zm9.435,3.58-9.435,9.435-3.58-3.58-1.2,1.2,4.182,4.182.6.575.6-.575L24.509,7.783Z" transform="translate(7.128 9.128)" fill="#fff"/>
+  </g>
+</svg>
