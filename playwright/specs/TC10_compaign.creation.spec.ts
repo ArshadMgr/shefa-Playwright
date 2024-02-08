@@ -34,11 +34,11 @@ test('TC10 - Login as a donor and create companign', async ({page}: {
 
     
 
-    /*
+    
     const pageText = await page.content();
     console.log('Case Status: ongoing?:', pageText.includes("مستمرة"));
     console.log('Campaign Type: Healthy stop?:', pageText.includes("وقف صحي"));
-    */
+    
 
 
 });
